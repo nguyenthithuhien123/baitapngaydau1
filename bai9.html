@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var toan = +prompt("nhập điểm toán");
+        var ly = +prompt("nhập điểm ly");
+        var hoa = +prompt("nhập điểm hoa");
+        var van = +prompt("nhập điểm van");
+        var su = +prompt("nhập điểm su");
+        var dia = +prompt("nhập điểm dia")
+        tb = (toan + ly + hoa + van + su + dia) / 6
+        if (toan <= 10 && ly <= 10 && hoa <= 10 && van <= 10 && su <= 10 && dia <= 10 && toan > 0 && ly > 0 && hoa > 0 && van > 0 && su > 0 && dia > 0) {
+            if (tb >= 8.0 && tb <= 10) {
+                document.write("GIỎI");
+            } else if (tb >= 6.5 && tb <= 7.9) {
+                document.write("KHÁ");
+            } else if (tb >= 5.0 && tb <= 6.4) {
+                document.write("TRUNG BÌNH");
+            } else if (tb < 5.0) {
+                document.write("YẾU");
+            }
+        }else {document.write("Nhập đúng thang điểm 0-10");}
+    </script>
+</body>
+
+</html>
